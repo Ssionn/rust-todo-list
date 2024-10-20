@@ -5,14 +5,14 @@ struct Todo {
 }
 
 pub fn run() {
-    let mut todos = Vec::new();
+    let mut todos: Vec<Todo> = Vec::new();
 
     println!("Add an item to the todo list.");
     println!("Tip: use the command 'list' to check the current list.");
     println!("\n");
 
     loop {
-        let mut input = String::new();
+        let mut input: String = String::new();
         read_line_checker(&mut input);
 
         match input.trim() {
